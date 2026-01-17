@@ -139,7 +139,7 @@ jq -n \
   --slurpfile stages "${TMP_STAGES}" \
   '{
     generatedAt: $generatedAt,
-    taskNumber: IoTdev,
+    taskNumber: "'"IoTdev"'",
     studentId: "'"${STUDENT_ID}"'",
     tableName: $tableName,
     lambdaName: $lambdaName,
